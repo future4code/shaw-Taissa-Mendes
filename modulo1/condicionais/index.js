@@ -107,7 +107,7 @@ const numero = Number(prompt("Digite o primeiro número."))
 
 
 
-    ________________________________________________-//____________________________________________________________
+    ________________________________________________//_________________________________________________________
 
 
 
@@ -119,43 +119,101 @@ const numero = Number(prompt("Digite o primeiro número."))
     b) Garanta que essa variável é do tipo `Number`, você deve usar o cast para number para isso.
     c) Agora veja se essa idade do usuário corresponde à idade mínima que permite dirigir. Se sim,
     imprima no console `"Você pode dirigir"`, caso contrário, imprima `"Você não pode dirigir.
-
-
-    const idade = prompt("Digite a sua idade")
-    const idadeDoUsuario = Number(prompt("Digite sua idade"))
-    if (idadeDoUsuario >=18){
-    console.log("Você pode dirigir")
-    }else{(idadeDoUsuario <18)
+    
+    const idade = Number(prompt("Digite a sua idade"))
+    
+    if (idade >= 18){
+    console.log("Voce pode dirigir")
+}else{
     console.log("Você não pode dirigir")
-    }
+}
+    
+
+
     
     
     
 
-    2. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar M (matutino) ou V (Vespertino) ou N (Noturno).
+   2. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar M (matutino) ou V (Vespertino) ou N (Noturno).
     Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco if/else
+    
+    
+    const turno1 = "M"
+    const turno2 = "V"
+    const turno3 = "N"
+    
+    const turno = prompt("Em qual turno você estuda?")
+    if(turno === turno1) {
+    console.log("Bom dia!")
+}else if(turno === turno2) {
+    console.log("Boa tarde!")
+}else {
+    console.log("Boa noite!")
+}
+
+/*RESPOSTA DO CONSOLE "Boa noite!"*/
+    
+
+       
+
+
+
+
+3. Repita o exercício anterior, mas utilizando a estrutura de switch case agora
+
+    const turno1 = "M"
+    const turno2 = "V"
+    const turno3 = "N"
+    
+    const turno = prompt("Em qual turno você estuda?")
+    
+    switch (turno) {
+    case 'M':
+        console.log("Bom dia!")
+        break
+    case 'V':
+        console.log("Boa tarde!")
+        break
+    case 'N':
+        console.log("Boa noite!")
+        break
+}
+
+/*Foi impresso no console "Boa noite!"......\o/ */
 
 
 
 
 
-
-
-
-
-
-    3. Repita o exercício anterior, mas utilizando a estrutura de switch case agora
-
-
-
-
-
-
-
-
-
-
-
-
-    4.Considere a situação: você vai ao cinema com um amigo ou amiga, porém ele/ela só assistirá a um filme com você se ele for do gênero fantasia e se o ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme.
+4.Considere a situação: você vai ao cinema com um amigo ou amiga, porém ele/ela só assistirá a um filme com você se ele for do gênero fantasia e
+se o ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra pergunta sobre o preço
+do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme.
+    
     Caso positivo, imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha outro filme :("
+    
+    const generoFilme = prompt("Qual gênero de filme irão assistir?")
+    
+    const valorDoIngresso = prompt("Qual o valor do ingresso?")
+    
+    if (generoFilme === "Fantasia" && valorDoIngresso < 15) {
+    console.log("Bom filme!")
+}else{
+    console.log("Escolha outro filme !")
+}
+
+/* Valor imprresso no console "Bom filme!"*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
