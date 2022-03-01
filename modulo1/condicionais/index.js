@@ -64,7 +64,7 @@ console.log("O preço da fruta ", fruta, " é ", "R$ ", preco)
 
     
     a) Para que serve o código acima?
-    /*Para mostrar o preço das frutas */
+    /*Para controlar o fluxo do código. Funciona como if/else, em cima de condicionais. */
     
     b) Qual será a mensagem impressa no console, se o valor de fruta for `"Maçã"`?
     /*O preço da fruta Maçã é R$ 2.25 */
@@ -190,6 +190,10 @@ se o ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuári
 do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme.
     
     Caso positivo, imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha outro filme :("
+    
+    
+    
+    
     
     const generoFilme = prompt("Qual gênero de filme irão assistir?")
     
